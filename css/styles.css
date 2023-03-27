@@ -1,0 +1,133 @@
+/* Колір основного тексту #434455 */
+
+/* Другорядний колір тексту #2E2F42 */
+
+/* Основний акцент #4D5AE5 */
+
+/* Другорядний акцент #404BBF */
+
+/* Колір футер #F4F4FD */
+
+/* Білий колір #FFFFFF */
+
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --primary-accent-color: #4d5ae5;
+  --secondary-accent-color: #404bbf;
+  --another-accent-color: #f4f4fd;
+  --primary-white-color: #ffffff;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/* Logo */
+
+.nav .logo-web {
+  color: var(--primary-accent-color);
+}
+
+.nav .logo-studio {
+  color: var(--title-text-color);
+}
+
+.logo-web:hover,
+.logo-web:focus {
+  color: var(--secondary-accent-color);
+}
+
+.logo-studio:hover,
+.logo-studio:focus {
+  color: var(--secondary-accent-color);
+}
+
+/* Site nav */
+
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--secondary-accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--primary-accent-color);
+}
+
+/* Address */
+
+.address .link {
+  color: var(--primary-text-color);
+}
+
+.address .link:hover,
+.address .link:focus {
+  color: var(--secondary-accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+  color: var(--primary-white-color);
+  background-color: var(--title-text-color);
+}
+
+.hero button {
+  color: var(--primary-white-color);
+  background-color: var(--primary-accent-color);
+}
+
+/* Section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Filters */
+
+.filters button {
+  color: var(--primary-accent-color);
+  background-color: var(--another-accent-color);
+}
+
+.filters button:active {
+  color: var(--primary-white-color);
+  background-color: var(--secondary-accent-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--title-text-color);
+}
+
+.footer .logo-web {
+  color: var(--primary-accent-color);
+}
+
+.footer .logo-studio {
+  color: var(--another-accent-color);
+}
+
+.logo-web:hover,
+.logo-web:focus {
+  color: var(--secondary-accent-color);
+}
+
+.logo-studio:hover,
+.logo-studio:focus {
+  color: var(--secondary-accent-color);
+}
+
+.footer .text {
+  color: var(--another-accent-color);
+}
