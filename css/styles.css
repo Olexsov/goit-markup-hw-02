@@ -1,15 +1,3 @@
-/* Колір основного тексту #434455 */
-
-/* Другорядний колір тексту #2E2F42 */
-
-/* Основний акцент #4D5AE5 */
-
-/* Другорядний акцент #404BBF */
-
-/* Колір футер #F4F4FD */
-
-/* Білий колір #FFFFFF */
-
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -22,6 +10,10 @@
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .list {
@@ -30,21 +22,25 @@ body {
 
 /* Logo */
 
-.nav .logo-web {
+.logo {
+  color: var(--title-text-color);
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.accent-web {
   color: var(--primary-accent-color);
 }
 
-.nav .logo-studio {
-  color: var(--title-text-color);
-}
-
-.logo-web:hover,
-.logo-web:focus {
-  color: var(--secondary-accent-color);
-}
-
-.logo-studio:hover,
-.logo-studio:focus {
+.logo .accent-web:hover,
+.logo .acent-web:focus,
+.logo:hover,
+.logo:focus {
   color: var(--secondary-accent-color);
 }
 
@@ -52,6 +48,10 @@ body {
 
 .site-nav .link {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
 }
 
 .site-nav .link:hover,
@@ -67,6 +67,9 @@ body {
 
 .address .link {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
 }
 
 .address .link:hover,
@@ -76,20 +79,54 @@ body {
 
 /* Hero */
 
+.hero {
+  background-color: var(--title-text-color);
+}
+
 .hero-title {
   color: var(--primary-white-color);
-  background-color: var(--title-text-color);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
 }
 
 .hero button {
   color: var(--primary-white-color);
   background-color: var(--primary-accent-color);
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.hero button:hover,
+.hero button:focus {
+  color: var(--primary-accent-color);
+  background-color: var(--another-accent-color);
 }
 
 /* Section */
 
 .section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.subsection-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.team .subsection-title,
+.team .text {
+  text-align: center;
 }
 
 /* Filters */
@@ -97,11 +134,26 @@ body {
 .filters button {
   color: var(--primary-accent-color);
   background-color: var(--another-accent-color);
+  letter-spacing: 0.04em;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
 }
 
-.filters button:active {
+.filters button:active,
+.filters button:hover,
+.filters button:focus {
   color: var(--primary-white-color);
   background-color: var(--secondary-accent-color);
+}
+
+/* Examples */
+
+.examples .link {
+  text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 /* Footer */
@@ -110,24 +162,12 @@ body {
   background-color: var(--title-text-color);
 }
 
-.footer .logo-web {
-  color: var(--primary-accent-color);
-}
-
-.footer .logo-studio {
-  color: var(--another-accent-color);
-}
-
-.logo-web:hover,
-.logo-web:focus {
-  color: var(--secondary-accent-color);
-}
-
-.logo-studio:hover,
-.logo-studio:focus {
-  color: var(--secondary-accent-color);
-}
-
+.footer .logo,
 .footer .text {
   color: var(--another-accent-color);
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+  color: var(--secondary-accent-color);
 }
