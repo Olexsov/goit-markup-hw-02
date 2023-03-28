@@ -22,8 +22,8 @@ body {
 
 /* Logo */
 
-.logo {
-  color: var(--title-text-color);
+.logo.link {
+  color: var(--primary-accent-color);
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.03em;
   font-weight: 800;
@@ -33,15 +33,8 @@ body {
   text-decoration: none;
 }
 
-.accent-web {
-  color: var(--primary-accent-color);
-}
-
-.logo .accent-web:hover,
-.logo .acent-web:focus,
-.logo:hover,
-.logo:focus {
-  color: var(--secondary-accent-color);
+.accent-studio {
+  color: var(--title-text-color);
 }
 
 /* Site nav */
@@ -70,6 +63,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   text-decoration: none;
+  font-style: normal;
 }
 
 .address .link:hover,
@@ -90,7 +84,7 @@ body {
   text-align: center;
 }
 
-.hero button {
+.hero-button {
   color: var(--primary-white-color);
   background-color: var(--primary-accent-color);
   letter-spacing: 0.04em;
@@ -101,10 +95,9 @@ body {
   cursor: pointer;
 }
 
-.hero button:hover,
-.hero button:focus {
-  color: var(--primary-accent-color);
-  background-color: var(--another-accent-color);
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--secondary-accent-color);
 }
 
 /* Section */
@@ -115,6 +108,11 @@ body {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
+  text-transform: capitalize;
+}
+
+.section.team {
+  background-color: var(--another-accent-color);
 }
 
 .subsection-title {
@@ -129,9 +127,13 @@ body {
   text-align: center;
 }
 
+.team .item {
+  background-color: var(--primary-white-color);
+}
+
 /* Filters */
 
-.filters button {
+.filters-button {
   color: var(--primary-accent-color);
   background-color: var(--another-accent-color);
   letter-spacing: 0.04em;
@@ -142,9 +144,9 @@ body {
   cursor: pointer;
 }
 
-.filters button:active,
-.filters button:hover,
-.filters button:focus {
+.filters-button:active,
+.filters-button:hover,
+.filters-button:focus {
   color: var(--primary-white-color);
   background-color: var(--secondary-accent-color);
 }
@@ -162,12 +164,7 @@ body {
   background-color: var(--title-text-color);
 }
 
-.footer .logo,
+.footer .accent-studio,
 .footer .text {
   color: var(--another-accent-color);
-}
-
-.footer .logo:hover,
-.footer .logo:focus {
-  color: var(--secondary-accent-color);
 }
