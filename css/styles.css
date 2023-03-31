@@ -39,7 +39,7 @@ body {
 
 /* Site nav */
 
-.nav-link {
+.nav.link {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
@@ -48,8 +48,8 @@ body {
   text-decoration: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.nav.link:hover,
+.nav.link:focus {
   color: var(--secondary-accent-color);
 }
 
@@ -59,7 +59,7 @@ body {
   font-style: normal;
 }
 
-.address-link {
+.address.link {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
   /* font-size: 16px; */
@@ -67,8 +67,8 @@ body {
   text-decoration: none;
 }
 
-.address-link:hover,
-.address-link:focus {
+.address.link:hover,
+.address.link:focus {
   color: var(--secondary-accent-color);
 }
 
