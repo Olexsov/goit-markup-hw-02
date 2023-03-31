@@ -11,9 +11,9 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
-  letter-spacing: 0.02em;
+  /* letter-spacing: 0.02em; */
   font-size: 16px;
-  line-height: 1.5;
+  /* line-height: 1.5; */
 }
 
 .list {
@@ -39,16 +39,17 @@ body {
 
 /* Site nav */
 
-.site-nav .link {
+.nav-link {
   color: var(--title-text-color);
+  letter-spacing: 0.02em;
   font-weight: 500;
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 1.5;
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: var(--secondary-accent-color);
 }
 
@@ -58,15 +59,16 @@ body {
   font-style: normal;
 }
 
-.address .link {
+.address-link {
   color: var(--primary-text-color);
-  font-size: 16px;
+  letter-spacing: 0.02em;
+  /* font-size: 16px; */
   line-height: 1.5;
   text-decoration: none;
 }
 
-.address .link:hover,
-.address .link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--secondary-accent-color);
 }
 
@@ -122,6 +124,11 @@ body {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+}
+
+.text {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
 }
 
 .team .subsection-title,
